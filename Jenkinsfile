@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('master') {
             when {
-                expression { branch 'master' }
+                branch 'master'
             }
             steps {
                 echo 'main branch'
@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Main 1') {
             when {
-                expression { branch 'master' }
+                 branch 'master' 
             }
             steps {
                 echo 'main 1'
@@ -21,7 +21,7 @@ pipeline {
 
         stage('Dev') {
             when {
-                expression { branch 'Dev' }
+                branch 'Dev' 
             }
             steps {
                 echo 'Dev branch 1'
@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Dev 1') {
             when {
-                expression { branch 'Dev' }
+                 branch 'Dev' 
             }
             steps {
                 echo 'Dev 1'
