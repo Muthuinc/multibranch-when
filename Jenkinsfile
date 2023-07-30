@@ -24,7 +24,7 @@ pipeline {
                 expression { branch 'Dev' }
             }
             steps {
-                echo 'Dev branch'
+                echo 'Dev branch 1'
             }
         }
         stage('Dev 1') {
