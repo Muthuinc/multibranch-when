@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage ('Main') {
+        stage ('master') {
             when {
                 branch 'main'
             }
@@ -12,7 +12,7 @@ pipeline {
         }
         stage ('Main 1') {
             when {
-             branch 'main'
+             branch 'master'
             }
             steps {
                 echo 'main 1'
