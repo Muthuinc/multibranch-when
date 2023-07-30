@@ -44,7 +44,7 @@ pipeline {
             }
         }
 
-        stage('master') {
+        stage('masterr') {
             when {
                 branch 'master'
             }
@@ -55,7 +55,7 @@ pipeline {
             }
         }
 
-        stage('Dev 1') {
+        stage('Devr 1') {
             when {
                  branch 'Dev' 
             }
