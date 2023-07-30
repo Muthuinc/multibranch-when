@@ -50,7 +50,7 @@ pipeline {
             }
             steps {
                 sh """
-                echo 'main branch'
+                echo 'main'
                 """
             }
         }
@@ -61,7 +61,7 @@ pipeline {
             }
             steps { 
                 sh """
-                echo 'Dev 1'
+                echo 'De'
                 """
             }
         }
