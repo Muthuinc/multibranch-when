@@ -46,7 +46,7 @@ pipeline {
 
         stage('masterr') {
             when {
-                $"BUILD_NUMBER" == 1
+                equals(actual: currentBuild.number, expected: 1)
             }
             steps {
                 sh """
