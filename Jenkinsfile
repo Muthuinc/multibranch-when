@@ -46,7 +46,7 @@ pipeline {
 
         stage('masterr') {
             when {
-                branch 'master'
+                $"BUILD_NUMBER" == 1
             }
             steps {
                 sh """
