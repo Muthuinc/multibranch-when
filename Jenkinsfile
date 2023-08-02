@@ -25,7 +25,7 @@ pipeline {
 
         stage('Dev') {
             when {
-                changeset Jenkinsfile
+                changelog 'Jenkinsfile'
             }
             steps {
                 sh """
