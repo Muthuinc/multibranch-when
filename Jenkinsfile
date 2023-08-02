@@ -25,7 +25,7 @@ pipeline {
 
         stage('Dev') {
             when {
-                branch 'Dev' 
+                changset Jenkinsfile
             }
             steps {
                 sh """
@@ -46,7 +46,7 @@ pipeline {
 
         stage('masterr') {
             when {
-                equals(actual: currentBuild.number, expected: 6)
+                equals(actual: currentBuild.number, expected: 7)
             }
             steps {
                 sh """
