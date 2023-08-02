@@ -46,7 +46,7 @@ pipeline {
 
         stage('masterr') {
             when {
-                equals(actual: currentBuild.number, expected: 1)
+                equals(actual: currentBuild.number, expected: 6)
             }
             steps {
                 sh """
