@@ -25,11 +25,11 @@ pipeline {
 
         stage('Dev') {
             when {
-                changelog 'Jenkinsfile'
+                changelog 'm.sh'
             }
             steps {
                 sh """
-                echo 'Dev branch 1'
+                ./m.sh
                 """
             }
         }
