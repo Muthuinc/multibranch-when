@@ -35,7 +35,7 @@ pipeline {
         }
         stage('Dev 1') {
             when {
-                 branch 'Dev' 
+                 changelog 'm.sh' 
             }
             steps { 
                 sh """
